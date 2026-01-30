@@ -1,4 +1,4 @@
-module github/go-xuan/configx
+module github.com/go-xuan/configx
 
 go 1.18
 
