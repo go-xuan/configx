@@ -32,6 +32,13 @@ type Configurator interface {
 	Execute() error
 }
 
+// LoadConfiguratorPanic ，
+func LoadConfiguratorPanic(configurators ...Configurator) {
+	for _, configurator := range configurators {
+		errorx.Panic(LoadConfigurator(configurator))
+	}
+}
+
 // LoadConfigurator 加载配置器
 func LoadConfigurator(configurator Configurator) error {
 	if configurator == nil {
