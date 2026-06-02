@@ -3,7 +3,7 @@ module github.com/go-xuan/configx
 go 1.25
 
 require (
-	github.com/go-xuan/utilx v1.26.3
+	github.com/go-xuan/utilx v1.26.4
 	github.com/sirupsen/logrus v1.9.4
 )
 
