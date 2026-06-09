@@ -3,13 +3,13 @@ module github.com/go-xuan/configx
 go 1.25
 
 require (
-	github.com/go-xuan/utilx v1.26.5
+	github.com/go-xuan/utilx v1.26.6
 	github.com/sirupsen/logrus v1.9.4
 )
 
 require (
 	github.com/BurntSushi/toml v1.6.0 // indirect
-	github.com/go-xuan/typex v1.26.3 // indirect
+	github.com/go-xuan/typex v1.26.4 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/magiconair/properties v1.8.10 // indirect
 	github.com/vmihailenco/msgpack v4.0.4+incompatible // indirect
