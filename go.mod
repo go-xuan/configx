@@ -4,7 +4,7 @@ go 1.25
 
 require (
 	github.com/go-xuan/utilx v1.26.6
-	github.com/sirupsen/logrus v1.9.4
+	github.com/sirupsen/logrus v1.10.2
 )
 
 require (

@@ -7,6 +7,13 @@ import (
 	"github.com/go-xuan/utilx/reflectx"
 )
 
+// SetTagReaderAnchor 自定义tag读取器锚点
+func SetTagReaderAnchor(anchor string) {
+	if anchor != "" {
+		defaultTagAnchor = anchor
+	}
+}
+
 // NewTagReader 创建tag读取器
 func NewTagReader() *TagReader {
 	return &TagReader{

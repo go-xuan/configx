@@ -2,27 +2,12 @@ package configx
 
 import (
 	"github.com/go-xuan/utilx/errorx"
-	"github.com/go-xuan/utilx/filex"
 )
 
 var (
 	defaultFileAnchor = "conf"    // 默认文件读取器锚点
 	defaultTagAnchor  = "default" // 默认tag读取器锚点
 )
-
-// SetFileReaderAnchor 自定义本地文件读取器锚点
-func SetFileReaderAnchor(anchor string) {
-	if anchor != "" && filex.Exists(anchor) {
-		defaultFileAnchor = anchor
-	}
-}
-
-// SetTagReaderAnchor 自定义tag读取器锚点
-func SetTagReaderAnchor(anchor string) {
-	if anchor != "" {
-		defaultTagAnchor = anchor
-	}
-}
 
 // ReaderRead 使用指定的配置读取器读取配置
 func ReaderRead(reader Reader, v any) error {
